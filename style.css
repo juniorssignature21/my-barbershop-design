@@ -1,0 +1,877 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+header {
+  background: radial-gradient(rgb(0, 0, 0, 0.2), rgb(18, 2, 43, 0.5)),
+    url(img/Premium\ Photo\ _\ Young\ african\ guy\ getting\ new\ haircut\ in\ barber\ salon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topnav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0%;
+  z-index: 99;
+  background: linear-gradient(#000031, rgba(59, 57, 57, 0.199));
+}
+
+.navbar {
+  width: 90vw;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar nav {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-right {
+  width: 70vw;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right-btn {
+  /* padding: 15px; */
+  height: 7vh;
+  background: transparent;
+  color: #fff48e;
+  border: 1px solid #fff48e;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: bold;
+  width: 12vw;
+}
+.list-div{
+  width: 18vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+.bi-list{
+  display: none;
+}
+
+.top-details {
+  width: 40vw;
+  position: absolute;
+  left: 6%;
+  top: 30%;
+}
+
+.top-details h1 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.top-details p {
+  color: #fff;
+}
+
+.top-details button {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff48e;
+  color: #000031;
+  border: none;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: screen;
+  background: #000031;
+  background: linear-gradient(90deg, khaki 30%, #000031 20%);
+}
+
+.about {
+  width: 70vw;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about img{
+  width: 30vw;
+}
+.about-detail {
+  width: 30vw;
+}
+
+.about-detail h2 {
+  color: #fff48e;
+}
+
+.about-detail b {
+  color: #fff48e;
+}
+
+.about-detail p {
+  color: #fff;
+}
+
+.about-detail h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+article {
+  height: 100%;
+  width: screen;
+  background: #000031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-service {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 95vw;
+  height: inherit;
+}
+
+.our-service .col {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 40vw;
+}
+
+.our-service p {
+  color: #fff;
+}
+
+.our-service b {
+  color: #fff48e;
+}
+
+.our-service h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  width: 90vw;
+  margin-top: 5%;
+}
+
+.row .div {
+  width: 40vw;
+  margin-top: 5%;
+}
+
+.row small {
+  color: #fff;
+  font-size: 10px;
+  width: 10px;
+}
+
+ a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff48e;
+  cursor: pointer;
+}
+a:hover span{
+  padding-left: 10px;
+}
+
+.service-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.service-btn button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  color: #fff48e;
+  border: 1px solid #fff48e;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+aside {
+  height: 100%;
+  width: screen;
+  background-color: #000031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  height: inherit;
+  /* border: 1px solid #000; */
+}
+
+.features p {
+  color: #fff;
+}
+.features h1{
+  font-size: 40px;
+  color: #fff;
+}
+
+.features b {
+  color: #fff48e;
+}
+
+.ft-1 {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 40vw;
+
+}
+
+.ft-2 {
+  text-align: left;
+  width: 20vw;
+}
+
+.two {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.two p {
+  color: #fff;
+}
+
+.two h2 {
+  color: #fff48e;
+}
+/* Teams section */
+#Teams{
+  width: screen;
+  height: 100%;
+  background-color: #000031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-teams{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  height: inherit;
+}
+.title-text {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 40vw;
+  text-align: center;
+}
+.title-text p{
+  color: #fff;
+}
+.title-text b{
+  color: #fff48e;
+}
+.title-text h1{
+  color: #fff;
+  font-size: 40px;
+}
+.team-mem{
+  width: 90vw;
+  margin-top: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+.team-mem-div{
+  width: 30vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.team-mem-div .bi{
+  color: #979797;
+  background-color: #00001f;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 80%;
+}
+.icons-div{
+  display: none;
+}
+.icons-div .bi:hover{
+  background-color: #fff48e;
+  transform: translateX(-5px);
+  transition: 1s;
+}
+.images-1:hover .icons-div{
+  display: block;
+  cursor: pointer;
+}
+.images-2:hover .icons-div{
+  display: block;
+  cursor: pointer;
+}
+.images-3:hover .icons-div{
+  display: block;
+  cursor: pointer;
+}
+.images-1{
+  background-image: url(img/team_img-1.jpg);
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  height: 85%;
+}
+.images-2{
+  background-image: url(img/team_img-2.jpg);
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  height: 85%;
+}
+.images-3{
+  background-image: url(img/team_img-3.jpg);
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  height: 85%;
+}
+.team-mem-div h2{
+  color: #fff;
+}
+/* Reviews Section */
+#Reviews{
+  width: screen;
+  height: 200vh;
+  background-color: #000031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-reviews{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  height: inherit;
+}
+.testimonial-row{
+  margin-top: 5%;
+  width: 90vw;
+  /* height: 30vh; */
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.testimonial-col{
+  width: 28vw;
+  height: 30vh;
+  margin: 10px;
+  background-color: #00001f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonial-details img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.testimonial-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25vw;
+  color: #fff;
+}
+.testimonial-details i{
+  background-color: #fff48e;
+  color: #000031;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.testimonial-details-col{
+  width: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimony h4{
+  margin-top: 5%;
+  text-align: left;
+  color: #979797;
+  font-weight: 300;
+  width: 25vw;
+}
+/* Book now Section */
+#booknow{
+  width: screen;
+  height: 190vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgb(0,0,49,0.5)), url(img/booknowbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booknow-div{
+  width: 60vw;
+  height: 170vh;
+  background-color: #000031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  width: 50vw;
+  height: 150vh;
+}
+input{
+  width: 100%;
+  height: 8vh;
+  margin: 10px 0;
+  background-color: #00001f;
+  border: none;
+  padding: 10px;
+  color: #979797;
+  outline: none ;
+  font-size: 20px;
+}
+textarea{
+  width: 100%;
+  height: 70vh;
+  margin: 10px 0;
+  background-color: #00001f;
+  border: none;
+  padding: 10px;
+  color: #979797;
+  outline: none ;
+  font-size: 20px;
+}
+::placeholder{
+  color: #979797;
+}
+form button{
+  width: 20vw;
+  height: 12vh;
+  background-color: #fff48e;
+  font-size: 1.5vw;
+  color: #000031;
+  border: none;
+  font-weight: 600;
+}
+form h1{
+  font-weight: bold;
+  color: #fff;
+  font-size: 4vw;
+}
+/* footer */
+footer{
+  width: screen;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000031;
+}
+.footer-div{
+  width: 95vw;
+  height: inherit;
+  /* border: 1px solid #fff; */
+  display: grid;
+  grid-template-columns: 40vw 55vw;
+}
+.foot_1{
+  height: inherit;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.foot_2{
+  height: inherit;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  text-align: left;
+}
+.feet{
+  width: 45vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-hour{
+  width: 20vw;
+  /* height: inherit; */
+}
+.contact{
+  width: 25vw;
+  display: flex;
+  align-items:start; 
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20vh;
+  color: #fff;
+}
+.footer-div h1{
+  color: #fff;
+}
+.footer-div h3, small{
+  color: #fff;
+  padding-top: 10px;
+}
+footer .icon-div{
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .icon-div i{
+  color: #979797;
+  background-color: #00001f;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
+  /* margin-top: 8%; */
+}
+footer .icon-div i:hover{
+  transition: 1s;
+  transform: translateY(-5px);
+  cursor: pointer;
+  background-color: #fff48e;
+}
+.location{
+  display: flex;
+  /* width: 15vw; */
+  justify-content: space-between;
+}
+.call{
+  display: flex;
+  /* width: 12.5vw; */
+  justify-content: space-between;
+  /* color: #979797; */
+}
+.mail{
+  display: flex;
+  /* width: 10vw; */
+  justify-content: space-between;
+  /* color: #979797; */
+}
+p{
+  color: #fff;
+}
+.Lorem-div{
+  width: 40vw;
+}
+.Lorem{
+  line-height: 30px; margin-bottom:10px; color:#979797;
+}
+@media only screen and (max-width:995px) {
+  .top-details{
+    width: 50vw;
+  }
+  .nav-right{
+    display: none;
+  }
+  .nav-right-btn{
+    display: none;
+  }
+  .bi-list{
+    width: 6vw;
+    height: 7vh;
+    border: 1px solid #fff48e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: #fff48e;
+  }
+  .bi-list:hover{
+    background-color: #fff48e;
+    color: #00001f;
+  }
+  main{
+    height: 150vh;
+    background: #000031;
+  }
+ .about-detail{
+  width: 90vw;
+
+ }
+ .about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 90vw;
+  height: 145vh;
+ }
+ .about img{
+  width: 100%;
+  height: 80%;
+ }
+
+  .pp{
+    display: none;
+  }
+  .row{
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+  .images-1, .images-2, .images-3{
+
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  .team-mem{
+    height: 270vh;
+  }
+  .team-mem-div{
+    width: 100%;
+  }
+  .booknow-div{
+    width: 65vw;
+    height: 180vh;
+  }
+  .testimonial-col{
+    width: 40vw;
+  }
+  .testimonial-details{
+    width: 35vw;
+  }
+  .testimony h4{
+    width: 37vw;
+  }
+  .testimonial-col:last-child{
+    display: none;
+  }
+  .testimonial-details-col img{
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+  }
+  .footer-div{
+    width: 100vw;
+    /* display: grid; */
+  /* grid-template-columns: 35vw 60vw; */
+}
+.feet{
+  align-items: center;
+  justify-content: center;
+  /* width: inherit; */
+  height: inherit;
+}
+.work-hour{
+  width: 20vw;
+}
+.contact{
+  width: 20vw;
+}
+  .service-btn{
+    width: 30vw;
+  }
+}
+@media only screen and (max-width:425px){
+ 
+  #Home {
+    width: 100vw;
+    /* height: 50vh; */
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .bi-list{
+   width: 10vw; 
+   font-size: 8vw;
+  }
+  .top-details{
+    width: 70vw;
+    top: 60%;
+  }
+  .top-details h1{
+    font-size: 10vw;
+  }
+  main{
+    width: 100vw;
+    height: 150vh;
+  }
+  .about{
+    height: 150vh;
+  }
+  .about-detail{
+    height: 50vh;
+  }
+  .our-service .col{
+    width: 90vw;
+  } 
+  .row{
+    /* width: 80vw; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .row .div{
+    width: 60vw;
+  }
+  .service-btn{
+    width: 70vw;
+  }
+  .features .ft-1{
+    width: 90vw;
+  }
+  .two{
+    flex-wrap: wrap;
+  }
+  .ft-2{
+    width: 60vw;
+    text-align: center;
+    margin: 10px;
+  }
+  .Lorem-div{
+  width: inherit;
+  }
+  footer{
+  height: 100%;
+  }
+  .footer-div{
+  display: flex;
+  flex-direction: column;
+  }
+  .foot_1{
+    width: 95vw;
+    border: 1px solid red;
+  }
+  .foot_2{
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+  }
+  .feet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    border: 1px solid green;
+  }
+  .work-hour{
+    width: 40vw;
+  }
+  .contact{
+  display: inline-block;
+ width: 50vw;
+    border: 1px solid brown;
+    height: 50vh;
+}
+.call{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vw;
+}
+.location{
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gold;
+}
+.mail{
+  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+}
