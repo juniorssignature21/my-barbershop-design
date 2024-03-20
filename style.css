@@ -3,9 +3,7 @@
   padding: 0;
   font-family: sans-serif;
 }
-body{
-  overflow-x: hidden;
-}
+
 header {
   background: radial-gradient(rgb(0, 0, 0, 0.2), rgb(18, 2, 43, 0.5)),
     url(img/Premium\ Photo\ _\ Young\ african\ guy\ getting\ new\ haircut\ in\ barber\ salon.jpg);
@@ -17,7 +15,9 @@ header {
   align-items: center;
   justify-content: center;
 }
-
+.active, .btn:hover{
+  color: #fff48e;
+}
 .topnav {
   width: 100vw;
   height: 15vh;
@@ -48,9 +48,10 @@ header {
   list-style-type: none;
 }
 
-.navbar nav ul li {
+.navbar nav a{
   display: inline-block;
   margin: 10px;
+  text-decoration: none;
   font-weight: bold;
   color: #fff;
 }
@@ -213,17 +214,17 @@ article {
   width: 10px;
 }
 
- a {
+.read  a {
   color: #fff;
   font-size: 15px;
   text-decoration: none;
 }
 
-a:hover {
+.read a:hover {
   color: #fff48e;
   cursor: pointer;
 }
-a:hover span{
+.read a:hover span{
   padding-left: 10px;
 }
 
@@ -563,6 +564,7 @@ footer{
   /* border: 1px solid #fff; */
   display: grid;
   grid-template-columns: 40vw 55vw;
+
 }
 .foot_1{
   height: inherit;
@@ -647,6 +649,9 @@ footer .icon-div i:hover{
   justify-content: space-between;
   /* color: #979797; */
 }
+.mail span{
+  font-size: 15px;
+}
 p{
   color: #fff;
 }
@@ -655,6 +660,9 @@ p{
 }
 .Lorem{
   line-height: 30px; margin-bottom:10px; color:#979797;
+}
+hr{
+  display: none;
 }
 @media only screen and (max-width:995px) {
   .top-details{
@@ -685,7 +693,7 @@ p{
     background: #000031;
   }
  .about-detail{
-  width: 90vw;
+  width: 65vw;
 
  }
  .about{
@@ -697,7 +705,7 @@ p{
   height: 145vh;
  }
  .about img{
-  width: 100%;
+  width: 70%;
   height: 80%;
  }
 
@@ -741,11 +749,7 @@ p{
     height: 50px;
     /* border-radius: 50%; */
   }
-  .footer-div{
-    width: 100vw;
-    /* display: grid; */
-  /* grid-template-columns: 35vw 60vw; */
-}
+
 .feet{
   align-items: center;
   justify-content: center;
@@ -761,7 +765,15 @@ p{
   .service-btn{
     width: 30vw;
   }
+  footer .icon-div{
+    width: 25vw;
+  }
 }
+
+/* @media only screen and (max-width:768px){
+  
+} */
+
 @media only screen and (max-width:425px){
  
   #Home {
@@ -784,13 +796,18 @@ p{
   }
   main{
     width: 100vw;
-    height: 150vh;
+    height: 180vh;
   }
   .about{
-    height: 150vh;
+    height: 170vh;
+  }
+  .about img{
+    width: 80vw;
+    height: 60%;
   }
   .about-detail{
     height: 50vh;
+    width: 80vw;
   }
   .our-service .col{
     width: 90vw;
@@ -821,57 +838,196 @@ p{
   .Lorem-div{
   width: inherit;
   }
+  .title-text{
+    width: 70vw;
+  }
+  .testimonial-col{
+    width: 70vw;
+  }
+  .testimonial-details{
+    width: 65vw;
+  }
+  .testimony h4{
+    width: 65vw;
+  }
+ 
   footer{
-  height: 100%;
+    height: 120vh;
+  }
+  footer .icon-div{
+    width: 45vw;
+  }
+  .none{
+    display: none;
   }
   .footer-div{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  /* height: 80vh; */
+  height: inherit;
+  /* border: 1px solid red; */
   }
   .foot_1{
     width: 95vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .foot_2{
     width: 95vw;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .feet{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90vw;
-    border: 1px solid green;
+    height: 40vh;
+    /* border: 1px solid green; */
+  }
+  .booknow-div{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form{
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  input{
+    width: 70vw;
+  }
+  textarea{
+    height: 50vh;
+    width: 70vw;
+  }
+  .booknow-div button{
+    width: 50vw;
+    font-size: 18px;
+    height: 10vh;
+    position: relative;
+    top: 5%;
+  }
+  form h1{
+    font-size: 40px;
+  }
+  .book{
+    text-align: left;
   }
   .work-hour{
-    width: 40vw;
+    width: 70vw;
+    margin-bottom: 5%;
   }
   .contact{
-  display: inline-block;
- width: 50vw;
-    border: 1px solid brown;
-    height: 50vh;
+  display: flex;
+ width: 70vw;
+ margin-top: 5%;
 }
-.call{
+/* .call{
   display: flex;
   flex-wrap: wrap;
   width: 40vw;
+} */
+.call{
+  width: 38vw;
 }
 .location{
-  width: 40vw;
+  width: 50vw;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
 }
 .mail{
-  width: 20vw;
+  width: 55vw;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   text-align: center;
 }
+.mail span {
+  font-size: 14px;
+}
+footer{
+  height: 140vh;
+}
+.feet{
+  flex-direction: column;
+  display: flex;
+}
+hr{
+  display: block;
+  width: 90vw;
+  border-color: #fff48e;
+}
+}
+@media only screen and (max-width:320px){
 
-
+  .our-service{
+    width: 95vw;
+  }
+  .row .div{
+    width: inherit;
+  }
+  .work-hour h1{
+    font-size: 25px;
+  }
+  .work-hour h3{
+    font-size: 18px;
+  }
+  .work-hour small{
+    font-size: 12px;
+  }
+  .contact p{
+    font-size: 12px;
+  }
+  .contact h1{
+    font-size: 25px;
+  }
+  footer .icon-div{
+    width: 60vw;
+  }
+  main{
+    height: 110vh;
+  }
+  .about{
+    height: 100vh;
+  }
+  .about img{
+    height: 50%;
+  }
+  .feet{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    height: 130vh;
+  }
+  .work-hour{
+    width: 90vw;
+    margin-bottom: 5%;
+  }
+  .contact{
+    margin-top: 5%;
+    width: 90vw;
+  }
+  .mail{
+    display: flex;
+    width: 60vw;
+    align-items: center;
+  }
+  hr{
+    display: block;
+    width: 90vw;
+    background-color: #fff48e;
+    border-color: #fff48e;
+  }
 }

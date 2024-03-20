@@ -16,23 +16,24 @@
         <div class="nav-left">
           <img src="img/GB_Logo_Banner-W_500x.png" width="160px" />
         </div>
-        <div class="nav-right">
+        <div class="nav-right" id="myDIV">
           <nav>
-            <ul>
-              <a href="#Home">
-                <li>Home</li>
+              <a href="#Home" id="home">
+                <div onclick="document.getElementById('home').style.color='#fff48e'">
+                  Home
+                </div>
               </a>
-              <a href="#About">
-                <li>About</li>
+              <a href="#About" class="arbout">
+                <div onclick="document.getElementsByClassName('arbout').style.color='#fff48e'">
+                  About
+                </div>
               </a>
               <a href="#Services">
-                <li>Services</li>
+                Services
               </a>
-              <li>Team</li>
-              <li>Reviews</li>
-              <li>BLog</li>
-              <li>Appointment</li>
-            </ul>
+              <a href="">Teams</a>
+              <a href="">Reviews</a>
+             <a href=""> Appointment</a>
           </nav>
         </div>
         <div class="list-div">
@@ -98,7 +99,9 @@
           </small>
           <br>
           <br>
-          <a href="#">Read More <span>&#8594</span></a>
+          <div class="read">
+            <a href="#">Read More <span>&#8594</span></a>
+          </div>
         </div>
         <div class="div">
           <img src="img/beard.jpg" alt="" />
@@ -110,7 +113,9 @@
           </small>
           <br>
           <br>
-          <a href="#">Read More <span>&#8594</span></a>
+          <div class="read">
+            <a href="#">Read More <span>&#8594</span></a>
+          </div>
         </div>
         <div class="div">
           <img src="img/beard.jpg" alt="" />
@@ -122,7 +127,9 @@
           </small>
           <br>
           <br>
-          <a href="#">Read More <span>&#8594</span></a>
+          <div class="read">
+            <a href="#">Read More <span>&#8594</span></a>
+          </div>
         </div>
       </div>
       <br>
@@ -146,40 +153,7 @@
           in
           quas, quis ullam expedita, repudiandae officia iste, corrupti fuga necessitatibus!
         </p>
-        <a href="">Read More <span>&#8594;</span></a>
-      </div>
-      <div class="row two">
-        <div class="ft-2">
-          <h2>
-            Feature
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nostrum optio cum eligendi magnam similique,
-            eaque quisquam accusamus architecto? Vero!
-          </p>
-          <br>
-          <a href="">Read More <span>&#8594;</span></a>
-        </div>
-        <div class="ft-2">
-          <h2>
-            Feature
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nostrum optio cum eligendi magnam similique,
-            eaque quisquam accusamus architecto? Vero!
-          </p>
-          <br>
-          <a href="">Read More <span>&#8594;</span></a>
-        </div>
-        <div class="ft-2">
-          <h2>
-            Feature
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nostrum optio cum eligendi magnam similique,
-            eaque quisquam accusamus architecto? Vero!
-          </p>
-          <br>
+        <div class="read">
           <a href="">Read More <span>&#8594;</span></a>
         </div>
       </div>
@@ -193,7 +167,9 @@
             eaque quisquam accusamus architecto? Vero!
           </p>
           <br>
-          <a href="">Read More <span>&#8594;</span></a>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
         </div>
         <div class="ft-2">
           <h2>
@@ -204,7 +180,9 @@
             eaque quisquam accusamus architecto? Vero!
           </p>
           <br>
-          <a href="">Read More <span>&#8594;</span></a>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
         </div>
         <div class="ft-2">
           <h2>
@@ -215,7 +193,9 @@
             eaque quisquam accusamus architecto? Vero!
           </p>
           <br>
-          <a href="">Read More <span>&#8594;</span></a>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
         </div>
       </div>
       <div class="row two">
@@ -228,7 +208,9 @@
             eaque quisquam accusamus architecto? Vero!
           </p>
           <br>
-          <a href="">Read More <span>&#8594;</span></a>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
         </div>
         <div class="ft-2">
           <h2>
@@ -239,7 +221,9 @@
             eaque quisquam accusamus architecto? Vero!
           </p>
           <br>
-          <a href="">Read More <span>&#8594;</span></a>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
         </div>
         <div class="ft-2">
           <h2>
@@ -250,7 +234,50 @@
             eaque quisquam accusamus architecto? Vero!
           </p>
           <br>
-          <a href="">Read More <span>&#8594;</span></a>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row two">
+        <div class="ft-2">
+          <h2>
+            Feature
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nostrum optio cum eligendi magnam similique,
+            eaque quisquam accusamus architecto? Vero!
+          </p>
+          <br>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
+        </div>
+        <div class="ft-2">
+          <h2>
+            Feature
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nostrum optio cum eligendi magnam similique,
+            eaque quisquam accusamus architecto? Vero!
+          </p>
+          <br>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
+        </div>
+        <div class="ft-2">
+          <h2>
+            Feature
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nostrum optio cum eligendi magnam similique,
+            eaque quisquam accusamus architecto? Vero!
+          </p>
+          <br>
+          <div class="read">
+            <a href="">Read More <span>&#8594;</span></a>
+          </div>
         </div>
       </div>
       <br>
@@ -343,7 +370,7 @@
         </p>
       </div>
       <div class="testimonial-row">
-        <div class="testimonial-col">
+        <div class="testimonial-col none">
           <div class="testimonial-details">
             <div class="testimonial-details-col">
               <img src="img/stable-diffusion-xl (2).jpg">
@@ -361,7 +388,7 @@
             </h4>
           </div>
         </div>
-        <div class="testimonial-col">
+        <div class="testimonial-col none">
           <div class="testimonial-details">
             <div class="testimonial-details-col">
               <img src="img/stable-diffusion-xl (2).jpg">
@@ -379,7 +406,7 @@
             </h4>
           </div>
         </div>
-        <div class="testimonial-col">
+        <div class="testimonial-col none">
           <div class="testimonial-details">
             <div class="testimonial-details-col">
               <img src="img/stable-diffusion-xl (2).jpg">
@@ -399,7 +426,7 @@
         </div>
       <!-- </div> -->
       <!-- <div class="testimonial-row"> -->
-        <div class="testimonial-col">
+        <div class="testimonial-col none">
           <div class="testimonial-details">
             <div class="testimonial-details-col">
               <img src="img/stable-diffusion-xl (2).jpg">
@@ -516,9 +543,11 @@
   <section id="booknow">
     <div class="booknow-div">
       <form action="mailto:chibuzor.john.2018@gmail.com" method="post">
-        <h1>Book Now</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deserunt ea excepturi, aliquid molestias exercitationem blanditiis sint, doloremque ipsam enim adipisci voluptatibus commodi fuga perspiciatis. Ipsam modi nam consequatur consequuntur harum fuga, praesentium, alias qui dolorem aliquam impedit? Exercitationem.
-        </p>
+        <div class="book">
+          <h1>Book Now</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa deserunt ea excepturi, aliquid molestias exercitationem blanditiis sint, doloremque ipsam enim adipisci voluptatibus commodi fuga perspiciatis. Ipsam modi nam consequatur consequuntur harum fuga, praesentium, alias qui dolorem aliquam impedit? Exercitationem.
+          </p>
+        </div>
         <input type="text" name="Full_name" id="Full_name" placeholder="Full Name" required>
         <br>
         <input type="email" name="Email" id="Email" placeholder="Your E-mail" required>
@@ -557,9 +586,10 @@
             <h1>Working Hours</h1>
             <h3>Mondays - Saturdays</h3>
             <small>9:00am - 9:00pm</small>
-            <h3>Sunday</h3>
+            <h3>Sundays</h3>
             <small>We're Closed</small>
           </div>
+          <hr>
           <div class="contact">
             <h1>Contact</h1>
             <div class="location">
@@ -568,16 +598,20 @@
                 No. 14b Brass Junction <br> Aba, Abia State, Nigeria
               </p>
             </div>
+            <br>
             <div class="call">
               <i class="bi bi-telephone-fill"></i>
               <a href="tel:07069780275">
+               <p>
                 +234 70 6978 0275
+               </p>
               </a>
             </div>
+            <br>
             <div class="mail">
               <i class="bi bi-envelope"></i>
               <span>
-                <p style="font-size: 4vw;">
+                <p>
                   chibuzor.john.2018@gmail.com
                 </p>
               </span>
@@ -587,6 +621,7 @@
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 
       <!-- smooth scroll with js -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -616,6 +651,19 @@
         });
       });
       </script>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
 </body>
 
 </html>
