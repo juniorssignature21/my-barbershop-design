@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <script src="index.js"></script>
   <header id="Home">
     <div class="topnav">
       <div class="navbar">
@@ -19,29 +20,79 @@
         <div class="nav-right" id="myDIV">
           <nav>
               <a href="#Home" id="home">
-                <div onclick="document.getElementById('home').style.color='#fff48e'">
+                <div onclick="styledisplay()">
                   Home
                 </div>
               </a>
-              <a href="#About" class="arbout">
-                <div onclick="document.getElementsByClassName('arbout').style.color='#fff48e'">
+              <a href="#About" class="arbout" id="abouts">
+                <div onclick="aboutdisplay()">
                   About
                 </div>
               </a>
-              <a href="#Services">
-                Services
+              <a href="#Services" id="service">
+                <div onclick="servicedisplay()">
+                  Services
+                </div>
               </a>
-              <a href="">Teams</a>
-              <a href="">Reviews</a>
-             <a href=""> Appointment</a>
+              <a href="#Teams" id="teams">
+                <div onclick="teamsdisplay()">
+                  Teams
+                </div>
+              </a>
+              <a href="#Reviews" id="review">
+                <div onclick="reviewdisplay()">
+                  Reviews
+                </div>
+              </a>
+             <a href="#booknow" id="books">
+              <div onclick="bookdisplay()">
+                Appointment
+              </div>
+            </a>
           </nav>
         </div>
         <div class="list-div">
-          <i class="bi bi-list"></i>
+          <i class="bi bi-list" onclick="menubtn()" id="menu"></i>
+          <i class="bi bi-x-lg" onclick="cancelbtn()" id="cancel"></i>
           <button class="nav-right-btn">Get Started</button>
         </div>
       </div>
     </div>
+    <div class="bottomnav nn" id="myDiv">
+      <nav>
+          <a href="#Home" id="home">
+            <div onclick="styledisplay()">
+              Home
+            </div>
+          </a>
+          <a href="#About" class="arbout" id="abouts">
+            <div onclick="aboutdisplay()">
+              About
+            </div>
+          </a>
+          <a href="#Services" id="service">
+            <div onclick="servicedisplay()">
+              Services
+            </div>
+          </a>
+          <a href="#Teams" id="teams">
+            <div onclick="teamsdisplay()">
+              Teams
+            </div>
+          </a>
+          <a href="#Reviews" id="review">
+            <div onclick="reviewdisplay()">
+              Reviews
+            </div>
+          </a>
+         <a href="#booknow" id="books">
+          <div onclick="bookdisplay()">
+            Appointment
+          </div>
+        </a>
+      </nav>
+    </div>
+    
     <div class="top-details">
       <h1>Let your hair do the talking.</h1>
       <p>
@@ -601,7 +652,7 @@
             <br>
             <div class="call">
               <i class="bi bi-telephone-fill"></i>
-              <a href="tel:07069780275">
+              <a href="tel:07069780275" style="text-decoration: none;">
                <p>
                 +234 70 6978 0275
                </p>
@@ -612,7 +663,9 @@
               <i class="bi bi-envelope"></i>
               <span>
                 <p>
-                  chibuzor.john.2018@gmail.com
+                  <a href="mailto:chibuzor.john.2018@gmail.com" style="text-decoration: none; color: #fff;">
+                    chibuzor.john.2018@gmail.com
+                  </a>
                 </p>
               </span>
             </div>

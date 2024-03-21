@@ -416,7 +416,7 @@ aside {
 /* Reviews Section */
 #Reviews{
   width: screen;
-  height: 200vh;
+  height: 130vh;
   background-color: #000031;
   display: flex;
   align-items: center;
@@ -429,10 +429,10 @@ aside {
   align-items: center;
   flex-direction: column;
   width: 90vw;
-  height: inherit;
+  height: 100vh;
 }
 .testimonial-row{
-  margin-top: 5%;
+  /* margin-top: 5%; */
   width: 90vw;
   /* height: 30vh; */
   flex-wrap: wrap;
@@ -664,7 +664,54 @@ p{
 hr{
   display: none;
 }
+.bottomnav{
+  display: none;
+}
+.bi-x-lg{
+  display: none;
+}
+#menu, #cancel{
+  display: none;
+}
 @media only screen and (max-width:995px) {
+  .bottomnav{
+    width: 40vw;
+    position: fixed;
+    top: 19%;
+    right: 0;
+    height: 20vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100000;
+    /* background-color: #fff48e; */
+  }
+  #menu{
+    display: flex;
+  }
+  .bottomnav nav {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #fff48e;
+    /* border-radius: 5%; */
+  }
+  .bottomnav nav a{
+    padding: 10px 0;
+    color: #040438;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: left;
+    border: 1px solid #040438;
+    /* border-radius: 10%; */
+    
+  }
   .top-details{
     width: 50vw;
   }
@@ -685,6 +732,20 @@ hr{
     color: #fff48e;
   }
   .bi-list:hover{
+    background-color: #fff48e;
+    color: #00001f;
+  }
+  .bi-x-lg{
+    width: 6vw;
+    height: 7vh;
+    border: 1px solid #fff48e;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: #fff48e;
+  }
+  .bi-x-lg:hover{
     background-color: #fff48e;
     color: #00001f;
   }
@@ -735,6 +796,9 @@ hr{
   .testimonial-col{
     width: 40vw;
   }
+  #Reviews{
+    height: 170vh;
+  }
   .testimonial-details{
     width: 35vw;
   }
@@ -770,9 +834,12 @@ hr{
   }
 }
 
-/* @media only screen and (max-width:768px){
-  
-} */
+@media only screen and (max-width:768px){
+  .bottomnav{
+    top: 35%;
+    
+  }
+}
 
 @media only screen and (max-width:425px){
  
@@ -840,6 +907,9 @@ hr{
   }
   .title-text{
     width: 70vw;
+  }
+  #Reviews{
+    height: 190vh;
   }
   .testimonial-col{
     width: 70vw;
@@ -957,7 +1027,7 @@ hr{
   font-size: 14px;
 }
 footer{
-  height: 140vh;
+  height: 160vh;
 }
 .feet{
   flex-direction: column;
@@ -970,6 +1040,25 @@ hr{
 }
 }
 @media only screen and (max-width:320px){
+  .testimonial-col{
+    width: 90vw;
+    height: 40vh;
+  }
+  .testimonial-details{
+    width: 75vw;
+  }
+  .testimonial-details-col{
+    width: 75vw;
+  }
+  .detail{
+    width: 40vw;
+  }
+  .testimony h4{
+    width: 80vw;
+  }
+  #Reviews{
+    height: 250vh;
+  }
 
   .our-service{
     width: 95vw;
@@ -1009,7 +1098,7 @@ hr{
     flex-direction: column;
   }
   footer{
-    height: 130vh;
+    height: 150vh;
   }
   .work-hour{
     width: 90vw;
@@ -1029,5 +1118,18 @@ hr{
     width: 90vw;
     background-color: #fff48e;
     border-color: #fff48e;
+  }
+  .bottomnav{
+    width: 40vw;
+    height: 10vh;
+    top: 20%;
+  }
+  .bi-x-lg, .bi-list{
+    width: 15vw;
+  }
+  .bottomnav nav a{
+    width: 40vw;
+    font-size: 15px;
+    padding: 2px 0;
   }
 }
