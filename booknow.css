@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), #000031), url(img/booknowbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.contact h2{
+    font-size: 40px;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact  form{
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 48.5%;
+}
+
+/* .field.error .item{
+    border-color: #ff0000;
+} */
+.field .item{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border-radius: 6px;
+    border: 2px solid #faebd7;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+/* .field .item:invalid{
+    border-color: #ff0000;
+} */
+.field .item:valid{
+    border: 6px solid #f0e68c;
+    box-shadow: 0 0 10px #f0e68c;
+}
+
+.field .item::placeholder{ 
+    color: #faebd7;
+}
+form .textarea-field .item{
+    resize: none;
+}
+
+form button{
+    padding: 12px 32px;
+    background-color: #f0e68c;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #f0e68c;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover{
+    box-shadow: none;
+}
+
+.field .error-txt{
+    font-size: 14px;
+    color: #ff0000;
+    text-align: left;
+    margin:  -5px 0 10px;
+    display: none;
+}
+
+form .textarea-field .error-txt{
+    margin-top: -10px;
+}
+@media only screen and (max-width: 425px) {
+    body{
+        width: 100vw;
+        height: 120vh;
+    }
+
+    .contact form{
+        width: 300px;
+    }
+    .input-box .input-field{
+        width: 100%;
+    }
+    form .input-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    form .textarea-field .item{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        width: 100vw;
+        height: 140vh;
+    }
+}
