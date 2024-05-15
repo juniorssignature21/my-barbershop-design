@@ -61,7 +61,6 @@ function featuredisplay() {
     document.getElementById("review").style.color="#fff";
     document.getElementById("books").style.color="#fff";
 }
-matchMedia("(max-width: 995px)").matches;
 function menubtn() {
     document.getElementById("myDiv").style.display="flex"
     document.getElementById("menu").style.display="none"
